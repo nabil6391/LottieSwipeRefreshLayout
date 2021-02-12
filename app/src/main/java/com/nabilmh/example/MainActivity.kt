@@ -14,10 +14,10 @@ class MainActivity : AppCompatActivity() {
         val swipeRefreshLayout = findViewById<LottieSwipeRefreshLayout>(R.id.homePageSwipeRefresh)
 
         swipeRefreshLayout.setOnRefreshListener {
-            Toast.makeText(this, "Refreshing Data", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Refreshing Data", Toast.LENGTH_SHORT).show()
 
             Handler().postDelayed({
-                Toast.makeText(this, "Done", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Done", Toast.LENGTH_SHORT).show()
                 swipeRefreshLayout.isRefreshing = false
             }, 2000)
         }

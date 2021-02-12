@@ -10,24 +10,19 @@
         android:id="@+id/homePageSwipeRefresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:lottie_rawRes="@raw/linkedin_icon"
+        app:indicator_overlay="false"
+        app:lottie_rawRes="@raw/monitor_progress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
             <TextView
                 android:text="Content"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="match_parent"/>
 
-
-        </ScrollView>
 
     </com.nabilmh.lottieswiperefreshlayout.LottieSwipeRefreshLayout>
 

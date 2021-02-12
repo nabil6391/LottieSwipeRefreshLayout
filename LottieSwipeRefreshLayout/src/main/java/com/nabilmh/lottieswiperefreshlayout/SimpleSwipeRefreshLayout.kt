@@ -42,19 +42,22 @@ open class SimpleSwipeRefreshLayout @JvmOverloads constructor(context: Context, 
         }
 
     /**
-     * @param The offset in pixels from the top of this view at which the progress spinner should
+     * @param triggerOffSetTop : The offset in pixels from the top of this view at which the progress indicator should
      *         come to rest after a successful swipe gesture.
      */
     var triggerOffSetTop = 0
         private set
 
     /**
-     * @param The maximum distance in pixels that the refresh indicator can be pulled
+     * @param maxOffSetTop : The maximum distance in pixels that the refresh indicator can be pulled
      *        beyond its resting position.
      */
     var maxOffSetTop = 0
         private set
 
+    /**
+     * @param overlay Whether to overlay the indicator on top of the content or not
+     */
     var overlay = true
         private set
 
