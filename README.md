@@ -36,6 +36,7 @@ See example for more detail.
 `max_offset_top`: The maximum distance in dp that the refresh indicator can be pulled beyond its resting position.
 `indicator_overlay`: Whether to overlay the indicator on top of the content or not (default:true)
 `trigger_offset_top`: The offset in dp from the top of this view at which the progress indicator should come to rest after a successful swipe gesture.
+
 `lottie_rawRes`: The Lottie file to use. (placed in the raw folder)
 
 ## Extensible
@@ -54,7 +55,7 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-   	        implementation 'com.github.nabil6391:LottieSwipeRefreshLayout:Tag'
+   	        implementation 'com.github.nabil6391:LottieSwipeRefreshLayout:1.0.0'
    	}
    
    
