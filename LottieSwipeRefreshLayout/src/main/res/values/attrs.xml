@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SimpleSwipeRefreshLayout">
+        <attr name="max_offset_top" format="dimension" />
+        <attr name="trigger_offset_top" format="dimension" />
+        <attr name="indicator_overlay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="LottieSwipeRefreshLayout">
+        <attr name="lottie_rawRes" format="reference" />
+    </declare-styleable>
+
+</resources>
