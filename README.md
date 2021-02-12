@@ -6,7 +6,7 @@ The main idea was to make it as similar to the AndroidX SwipeRefreshLayout as po
 
 <img src="img/example1.gif"></img>
 <img src="img/example2.gif"></img>
-<img src="img/example2.gif"></img>
+<img src="img/example3.gif"></img>
 
 ## Basic usage
 
