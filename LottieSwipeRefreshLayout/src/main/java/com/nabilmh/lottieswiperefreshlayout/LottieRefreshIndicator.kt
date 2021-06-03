@@ -1,4 +1,4 @@
-package com.photobook.android.widgets.compose
+package com.nabilmh.lottieswiperefreshlayout
 
 import androidx.compose.animation.core.animate
 import androidx.compose.foundation.layout.size
@@ -22,7 +22,6 @@ import androidx.compose.ui.viewinterop.AndroidView
 import com.airbnb.lottie.LottieAnimationView
 import com.airbnb.lottie.LottieDrawable
 import com.google.accompanist.swiperefresh.SwipeRefreshState
-import com.photobook.android.R
 
 /**
  * A custom indicator which displays a LottieSwipeRefreshIndicator
@@ -31,7 +30,7 @@ import com.photobook.android.R
 fun LottieRefreshIndicator(
     state: SwipeRefreshState,
     refreshTriggerDistance: Dp,
-    animation: Int = R.raw.photobook_loader,
+    animation: Int? = null,
     backgroundColor: Color = MaterialTheme.colors.surface,
     shape: Shape = MaterialTheme.shapes.small.copy(CornerSize(percent = 50)),
     refreshingOffset: Dp = 16.dp,

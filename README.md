@@ -79,7 +79,7 @@ SwipeRefresh(
                 //Refresh
             },
             indicator = { state, trigger ->
-                LottieRefreshIndicator(state = state, refreshTriggerDistance = trigger)
+                LottieRefreshIndicator(state = state, refreshTriggerDistance = trigger, animation = R.raw.monitor_progress)
             },
         ) {
             //Content
