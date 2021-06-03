@@ -62,3 +62,26 @@ Step 2. Add the dependency
 ## Inspiration
 
 This library took its original inspiration from https://github.com/timrijckaert/LottieSwipeRefreshLayout 
+
+## Usage in jetpack Compose
+
+Use it in coordination with accompanist swipe refresh
+
+implementation "com.google.accompanist:accompanist-swiperefresh:<version>"
+
+```kotlin
+
+var loading by viewModel.loading.collectAsState() //observerAsState for livedata
+
+SwipeRefresh(
+            state = rememberSwipeRefreshState(isRefreshing = !loading),
+            onRefresh = {
+                //Refresh
+            },
+            indicator = { state, trigger ->
+                LottieRefreshIndicator(state = state, refreshTriggerDistance = trigger)
+            },
+        ) {
+            //Content
+        }
+```
